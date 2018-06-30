@@ -36,7 +36,7 @@ fi
 num_nodes=$1
 echo "" > hosts.txt 
 for ((i = 2; i <= ${num_nodes}+1; i++)); do
-     sshpass -p 'clusim' ssh-copy-id 172.17.0.$i
+     yes | sshpass -p 'clusim' ssh-copy-id 172.17.0.$i
 done
 print_info "Copying is done."
 
