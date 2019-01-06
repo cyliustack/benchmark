@@ -101,7 +101,7 @@ ARCH         = CUDA
 #
 # Set TOPdir to the location of where this is being built
 ifndef  TOPdir
-TOPdir = /home/cyliu/hpl-2.0_FERMI_v15
+TOPdir = ~/workspace/benchmark/hpl/hpl-2.0_FERMI_v15
 endif
 INCdir       = $(TOPdir)/include
 BINdir       = $(TOPdir)/bin/$(ARCH)

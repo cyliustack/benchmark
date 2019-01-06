@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #location of HPL 
-HPL_DIR=/home/cyliu/hpl-2.0_FERMI_v15
+HPL_DIR=~/workspace/benchmark/hpl/hpl-2.0_FERMI_v15
 
 # Number of CPU cores ( per GPU used = per MPI process )
 CPU_CORES_PER_GPU=4
@@ -23,5 +23,5 @@ export CUDA_DGEMM_SPLIT=0.80
 export CUDA_DTRSM_SPLIT=0.70
 
 export LD_LIBRARY_PATH=$HPL_DIR/src/cuda:$LD_LIBRARY_PATH
-
+export export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/intel/mkl/lib/intel64:~/intel/mkl/lib/intel64_lin:~/intel/compilers_and_libraries_2019.1.144/linux/compiler/lib/intel64_lin/
 $HPL_DIR/bin/CUDA/xhpl
