@@ -75,6 +75,10 @@ void* pi_multi(void* opaque)
         double y; 
         drand48_r (&drand_buf, &x);
         drand48_r (&drand_buf, &y);
+        //TODO: Optionally enabling worse rand() implementation.
+        //x = (double) rand()/RAND_MAX; //Random point: x 
+        //y = (double) rand()/RAND_MAX; //Random point: y
+
         double distance = (x * x) + (y * y); 
         distance = sqrt(distance); 
         if(distance <= 1){
