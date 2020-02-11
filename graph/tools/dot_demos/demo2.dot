@@ -1,5 +1,0 @@
-//demo2
-graph demo2{
-     a -- b -- c;
-     c -- a;
-}

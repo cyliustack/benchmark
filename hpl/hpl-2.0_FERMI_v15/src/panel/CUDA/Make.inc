@@ -1,1 +1,1 @@
-/home/cyliu/hpl-2.0_FERMI_v15/Make.CUDA
+/home/cyliu/workspace/benchmark/hpl/hpl-2.0_FERMI_v15/Make.CUDA
