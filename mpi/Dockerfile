@@ -22,4 +22,12 @@ RUN apt update && apt install -y \
 RUN git clone https://github.com/cyliustack/scripts && \
     cp scripts/vimrc ~/.vimrc
 
-COPY openmpi /opt/openmpi
+COPY ./openmpi /opt/openmpi 
+
+RUN adduser nathan && echo nathan:nathan | chpasswd
+USER nathan
+WORKDIR /home/nathan
+
+ENV PATH=/opt/openmpi/bin:${PATH}
+
+ENV LD_LIBRARY_PATH=/opt/openmpi/lib:${LD_LIBRARY_PATH}
