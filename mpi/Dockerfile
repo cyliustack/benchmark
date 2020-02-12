@@ -11,6 +11,7 @@ RUN apt update && apt install -y \
     libpapi-dev \
     valgrind \
     strace \
+    iperf \
     && rm -rf /var/lib/apt/lists/*
 
 
